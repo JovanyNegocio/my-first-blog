@@ -3,19 +3,43 @@
 
 <head>
 	<title>Django Girls blog</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 </head>
 
 <body>
+
 	<div>
-		<h1><a href="">Django Girls blog</a></h1>
+		<h1><a href="/">Django Girls blog</a></h1>
 	</div>
+
 		{% for post in posts %}
 			<div>
 				<p>published: {{ post.published_date }}</p>
 				<h1><a href="">{{ post.title  }}</a></h1>
 				<p>{{ post.text|linebreaksbr }}</p>
 			</div>
+
+			<div>
+			<p>{{ 23.11.2018, 17:52 }}</p>
+			<h1><a href="">{{ My first post }}</a></h1>
+			<p>{{ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eget justo nec rutrum. Aliquam eu nibh vitae justo dictum consequat. Maecenas a posuere ipsum. Curabitur et purus non nibh rhoncus ullamcorper sit amet eu nisl. Nulla arcu nisi, fringilla quis erat vel, porta feugiat erat. Quisque a metus sed dui pretium consequat. Sed porta, sem consequat pellentesque porta, mi orci interdum ipsum, a convallis magna tellus eget purus. Proin rhoncus molestie justo, ac imperdiet mi. In pharetra, ipsum sed sollicitudin ullamcorper, massa sapien congue velit, venenatis lobortis enim lorem eget justo. Quisque et elit orci. Suspendisse ut fringilla leo. Donec in elementum mauris. In ut commodo nunc, vitae hendrerit risus. Proin ac laoreet nibh, non fermentum arcu. }}</p>
+			</div>
+
+			<div>
+			<p>{{ 23.11.2018, 17:54 }}</p>
+			<h1><a href="">{{ My second post }}</a></h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eget justo nec rutrum. Aliquam eu nibh vitae justo dictum consequat. Maecenas a posuere ipsum. Curabitur et purus non nibh rhoncus ullamcorper sit amet eu nisl. Nulla arcu nisi, fringilla quis erat vel, porta feugiat erat. Quisque a metus sed dui pretium consequat. Sed porta, sem consequat pellentesque porta, mi orci interdum ipsum, a convallis magna tellus eget purus. Proin rhoncus molestie justo, ac imperdiet mi. In pharetra, ipsum sed sollicitudin ullamcorper, massa sapien congue velit, venenatis lobortis enim lorem eget justo. Quisque et elit orci. Suspendisse ut fringilla leo. Donec in elementum mauris. In ut commodo nunc, vitae hendrerit risus. Proin ac laoreet nibh, non fermentum arcu.</p>
+			</div>
+
+			<div>
+			<p>{{ 23.11.2018, 17:55 }}</p>
+			<h1><a href="">{{ My third post }}</a></h1>
+			<p>{{ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eget justo nec rutrum. Aliquam eu nibh vitae justo dictum consequat. Maecenas a posuere ipsum. Curabitur et purus non nibh rhoncus ullamcorper sit amet eu nisl. Nulla arcu nisi, fringilla quis erat vel, porta feugiat erat. Quisque a metus sed dui pretium consequat. Sed porta, sem consequat pellentesque porta, mi orci interdum ipsum, a convallis magna tellus eget purus. Proin rhoncus molestie justo, ac imperdiet mi. In pharetra, ipsum sed sollicitudin ullamcorper, massa sapien congue velit, venenatis lobortis enim lorem eget justo. Quisque et elit orci. Suspendisse ut fringilla leo. Donec in elementum mauris. In ut commodo nunc, vitae hendrerit risus. Proin ac laoreet nibh, non fermentum arcu. }}</p>
+			</div>
+
 		{% endfor %}
+		
 </body>
 
 </html>
