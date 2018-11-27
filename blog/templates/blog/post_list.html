@@ -13,10 +13,33 @@
 
 <body>
 
-	<div class="page-header">
+	<div class="page-header" align="center">
 		<h1><a href="/">PyLadies - Luanda, blog</a></h1>
 	</div>
 
+	<div class="content container">
+		<div class="row">
+			<div class="col-md-8">
+				{% for post in posts %}
+					<div class="post">
+						<h1><a href="">{{ post.title }}</a></h1>
+						<p>{{ post.text|linebreaksbr }}</p>
+
+						<div class="date">
+							<p>published: {{ post.published_date }}</p>
+						</div>
+						
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
+
+<!--
 	{% for post in posts %}
 		<div class="post">
 			<h3><a href="">{{ post.title  }}</a></h3>
@@ -24,7 +47,4 @@
 			<p>published: {{ post.published_date }}</p>
 		</div>
 	{% endfor %}
-
-</body>
-
-</html>
+-->
