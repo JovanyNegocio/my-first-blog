@@ -4,7 +4,7 @@
 <html>
 
 <head>
-	<title>PyLadies - Luanda</title>
+	<title>Pyladies - Luanda</title>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="{%	static 'css/blog.css' %}">
@@ -14,7 +14,7 @@
 <body>
 
 	<div class="page-header" align="center">
-		<h1><a href="/">PyLadies - Luanda, blog</a></h1>
+		<h1><a href="/">Pyladies - Luanda, blog</a></h1>
 	</div>
 
 	<div class="content container">
@@ -28,7 +28,7 @@
 						<div class="date">
 							<p>published: {{ post.published_date }}</p>
 						</div>
-						
+
 					</div>
 				{% endfor %}
 			</div>
@@ -38,13 +38,3 @@
 </body>
 
 </html>
-
-<!--
-	{% for post in posts %}
-		<div class="post">
-			<h3><a href="">{{ post.title  }}</a></h3>
-			<p>{{ post.text|linebreaksbr }}</p>
-			<p>published: {{ post.published_date }}</p>
-		</div>
-	{% endfor %}
--->
